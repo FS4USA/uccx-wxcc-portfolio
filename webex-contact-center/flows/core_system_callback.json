@@ -1,0 +1,322 @@
+{
+  "orgId": "00000000-0000-0000-0000-000000000000",
+  "version": 0,
+  "id": "656f310eab20f501d393a314",
+  "flowType": "FLOW",
+  "name": "CORE_CCG_CoreSystemCallBack",
+  "description": "",
+  "comment": null,
+  "variables": [],
+  "process": {
+    "activities": {
+      "00000000-0000-4000-8000-000000000002": {
+        "id": "00000000-0000-4000-8000-000000000002",
+        "name": "NewPhoneContact",
+        "group": "start",
+        "properties": {
+          "name": "NewPhoneContact",
+          "event": "NewPhoneContact",
+          "flowType": {
+            "eventSourceName": "WebexContactCenter",
+            "eventSpecificationName": "ContactStartWorkflow",
+            "eventClassificationId": "5f10475cf021306e89e1692c",
+            "eventClassificationName": "VoiceInteractions",
+            "eventSpecificationId": "5f2d02144332507e39cc8a7f",
+            "eventSourceId": "5eff0e2eb10162499bc9f932"
+          },
+          "activityName": "NewPhoneContact",
+          "_renderRequestTimestamp": 1701785868177,
+          "activityId": "start"
+        }
+      }
+    },
+    "links": []
+  },
+  "diagram": {
+    "widgets": {
+      "00000000-0000-4000-8000-000000000002": {
+        "id": "00000000-0000-4000-8000-000000000003",
+        "type": "start",
+        "widgetType": "activity",
+        "label": "New Activity Widget in Diagram",
+        "point": {
+          "x": 100,
+          "y": 100
+        },
+        "ports": [
+          {
+            "portId": "00000000-0000-4000-8000-000000000004",
+            "isSourcePort": false,
+            "linkId": null,
+            "type": "arrow",
+            "links": [],
+            "properties": {
+              "x": 266,
+              "name": "out",
+              "y": 117,
+              "label": "out",
+              "alignment": "right"
+            }
+          }
+        ],
+        "properties": {
+          "name": "NewPhoneContact",
+          "event": "NewPhoneContact",
+          "flowType": {
+            "eventSourceName": "WebexContactCenter",
+            "eventSpecificationName": "ContactStartWorkflow",
+            "eventClassificationId": "5f10475cf021306e89e1692c",
+            "eventClassificationName": "VoiceInteractions",
+            "eventSpecificationId": "5f2d02144332507e39cc8a7f",
+            "eventSourceId": "5eff0e2eb10162499bc9f932"
+          },
+          "activityName": "NewPhoneContact",
+          "_renderRequestTimestamp": 1701785868177,
+          "activityId": "start"
+        }
+      }
+    },
+    "properties": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "zoom": 100,
+      "gridSize": 0
+    }
+  },
+  "flowId": "656f310b8c7eaa2d70ec9f18",
+  "eventFlows": {
+    "eventsMap": {
+      "GLOBAL_EVENTS": {
+        "id": "GLOBAL_EVENTS",
+        "name": "name",
+        "description": "description",
+        "process": {
+          "activities": {
+            "00000000-0000-4000-8000-000000000005": {
+              "id": "00000000-0000-4000-8000-000000000005",
+              "name": "GlobalErrorHandling",
+              "group": "event",
+              "properties": {
+                "displayName": "OnGlobalError",
+                "name": "GlobalErrorHandling",
+                "eventSourceName": "WebexContactCenter",
+                "event": "OnGlobalError",
+                "eventSpecificationName": "GlobalErrorHandling",
+                "_renderRequestTimestamp": 1701785868177,
+                "eventClassificationId": "5f10475cf021306e89e1692c",
+                "eventClassificationName": "VoiceInteractions",
+                "activityId": "event",
+                "eventSpecificationId": "627c0663e98eca854178bba6",
+                "eventSourceId": "5eff0e2eb10162499bc9f932",
+                "iconDiagram": "icon-error-legacy_16"
+              }
+            },
+            "00000000-0000-4000-8000-000000000006": {
+              "id": "00000000-0000-4000-8000-000000000006",
+              "name": "AgentOfferContact",
+              "group": "event",
+              "properties": {
+                "displayName": "AgentOffered",
+                "name": "AgentOfferContact",
+                "eventSourceName": "WebexContactCenter",
+                "event": "AgentOffered",
+                "eventSpecificationName": "AgentOfferContact",
+                "_renderRequestTimestamp": 1701785868177,
+                "eventClassificationId": "5f10475cf021306e89e1692c",
+                "eventClassificationName": "VoiceInteractions",
+                "activityId": "event",
+                "eventSpecificationId": "637da544c02b556cf406d192",
+                "eventSourceId": "5eff0e2eb10162499bc9f932",
+                "iconDiagram": "icon-audio-call_16"
+              }
+            },
+            "00000000-0000-4000-8000-000000000007": {
+              "id": "00000000-0000-4000-8000-000000000007",
+              "name": "ContactPredial",
+              "group": "event",
+              "properties": {
+                "displayName": "PreDial",
+                "name": "ContactPredial",
+                "eventSourceName": "WebexContactCenter",
+                "event": "PreDial",
+                "eventSpecificationName": "ContactPredial",
+                "_renderRequestTimestamp": 1701785868177,
+                "eventClassificationId": "5f10475cf021306e89e1692c",
+                "eventClassificationName": "VoiceInteractions",
+                "activityId": "event",
+                "eventSpecificationId": "63c914bebfee4622076922b1",
+                "eventSourceId": "5eff0e2eb10162499bc9f932",
+                "iconDiagram": "icon-other-number_16"
+              }
+            }
+          },
+          "links": []
+        },
+        "onEvents": {
+          "GlobalErrorHandling": "00000000-0000-4000-8000-000000000005",
+          "AgentOfferContact": "00000000-0000-4000-8000-000000000006",
+          "ContactPredial": "00000000-0000-4000-8000-000000000007"
+        },
+        "diagram": {
+          "widgets": {
+            "00000000-0000-4000-8000-000000000005": {
+              "id": "00000000-0000-4000-8000-000000000008",
+              "type": "event",
+              "widgetType": "activity",
+              "label": "New Activity Widget in Diagram",
+              "point": {
+                "x": 100,
+                "y": 115
+              },
+              "ports": [
+                {
+                  "portId": "00000000-0000-4000-8000-000000000009",
+                  "isSourcePort": false,
+                  "linkId": null,
+                  "type": "arrow",
+                  "links": [],
+                  "properties": {
+                    "x": 100,
+                    "name": "out",
+                    "y": 115,
+                    "label": "out",
+                    "alignment": "right"
+                  }
+                }
+              ],
+              "properties": {
+                "displayName": "OnGlobalError",
+                "name": "GlobalErrorHandling",
+                "eventSourceName": "WebexContactCenter",
+                "event": "OnGlobalError",
+                "eventSpecificationName": "GlobalErrorHandling",
+                "_renderRequestTimestamp": 1701785868177,
+                "eventClassificationId": "5f10475cf021306e89e1692c",
+                "eventClassificationName": "VoiceInteractions",
+                "activityId": "event",
+                "eventSpecificationId": "627c0663e98eca854178bba6",
+                "eventSourceId": "5eff0e2eb10162499bc9f932",
+                "iconDiagram": "icon-error-legacy_16"
+              }
+            },
+            "00000000-0000-4000-8000-000000000006": {
+              "id": "00000000-0000-4000-8000-00000000000a",
+              "type": "event",
+              "widgetType": "activity",
+              "label": "New Activity Widget in Diagram",
+              "point": {
+                "x": 100,
+                "y": 230
+              },
+              "ports": [
+                {
+                  "portId": "00000000-0000-4000-8000-00000000000b",
+                  "isSourcePort": false,
+                  "linkId": null,
+                  "type": "arrow",
+                  "links": [],
+                  "properties": {
+                    "x": 100,
+                    "name": "out",
+                    "y": 230,
+                    "label": "out",
+                    "alignment": "right"
+                  }
+                }
+              ],
+              "properties": {
+                "displayName": "AgentOffered",
+                "name": "AgentOfferContact",
+                "eventSourceName": "WebexContactCenter",
+                "event": "AgentOffered",
+                "eventSpecificationName": "AgentOfferContact",
+                "_renderRequestTimestamp": 1701785868177,
+                "eventClassificationId": "5f10475cf021306e89e1692c",
+                "eventClassificationName": "VoiceInteractions",
+                "activityId": "event",
+                "eventSpecificationId": "637da544c02b556cf406d192",
+                "eventSourceId": "5eff0e2eb10162499bc9f932",
+                "iconDiagram": "icon-audio-call_16"
+              }
+            },
+            "00000000-0000-4000-8000-000000000007": {
+              "id": "00000000-0000-4000-8000-00000000000c",
+              "type": "event",
+              "widgetType": "activity",
+              "label": "New Activity Widget in Diagram",
+              "point": {
+                "x": 100,
+                "y": 345
+              },
+              "ports": [
+                {
+                  "portId": "00000000-0000-4000-8000-00000000000d",
+                  "isSourcePort": false,
+                  "linkId": null,
+                  "type": "arrow",
+                  "links": [],
+                  "properties": {
+                    "x": 100,
+                    "name": "out",
+                    "y": 345,
+                    "label": "out",
+                    "alignment": "right"
+                  }
+                }
+              ],
+              "properties": {
+                "displayName": "PreDial",
+                "name": "ContactPredial",
+                "eventSourceName": "WebexContactCenter",
+                "event": "PreDial",
+                "eventSpecificationName": "ContactPredial",
+                "_renderRequestTimestamp": 1701785868177,
+                "eventClassificationId": "5f10475cf021306e89e1692c",
+                "eventClassificationName": "VoiceInteractions",
+                "activityId": "event",
+                "eventSpecificationId": "63c914bebfee4622076922b1",
+                "eventSourceId": "5eff0e2eb10162499bc9f932",
+                "iconDiagram": "icon-other-number_16"
+              }
+            }
+          },
+          "properties": {}
+        }
+      }
+    },
+    "properties": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "zoom": 0,
+      "gridSize": 0
+    }
+  },
+  "runtimeVariables": [],
+  "validating": false,
+  "persist": true,
+  "validationResults": [],
+  "createdBy": "user1@example.com",
+  "createdDate": "2023-12-05T14:17:47.267",
+  "lastModifiedDate": "2023-12-05T14:17:50.625",
+  "lastModifiedBy": "user1@example.com",
+  "variableOrders": {
+    "pop-over": [
+      {
+        "name": "ani",
+        "variableSeq": "0"
+      },
+      {
+        "name": "dn",
+        "variableSeq": "1"
+      },
+      {
+        "name": "virtualTeamName",
+        "variableSeq": "2"
+      }
+    ],
+    "interaction-panel": []
+  },
+  "settings": [],
+  "associatedChannels": [],
+  "flowOutcome": null
+}
