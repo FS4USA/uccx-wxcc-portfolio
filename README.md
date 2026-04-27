@@ -4,7 +4,13 @@ A working library of scripts, flows, integrations, and reporting tooling I've bu
 
 **Author:** Jim Pilgrim ([FS4USA](https://github.com/FS4USA))
 **Focus areas:** Cisco UCCX, Webex Contact Center, Webex Calling, call quality troubleshooting, CDR analysis, API automation.
+## From the field — Cisco Community articles
 
+Field-derived write-ups on the same problems this repo addresses:
+
+- **[UCCX 15 Upgrade Landmines: Ten Common Failures and Their Fixes](https://community.cisco.com/t5/collaboration-knowledge-base/uccx-15-upgrade-landmines-ten-common-failures-and-their-fixes/ta-p/5547350)** — Ten of the most common failure modes during UCCX upgrades to v15, with diagnosis steps and fixes for each.
+- **[Why SIP Cause 96 Appears Between CUCM and CUBE: Diagnosis and Fix](https://community.cisco.com/t5/collaboration-knowledge-base/why-sip-cause-96-appears-between-cucm-and-cube-diagnosis-and-fix/ta-p/5547340)** — Root-cause analysis and the configuration remediation for SIP cause 96 errors on CUCM-to-CUBE call paths.
+- **[End-to-End Voice Network Encryption: From Carrier SIP to Every Phone](https://community.cisco.com/t5/collaboration-knowledge-base/end-to-end-voice-network-encryption-from-carrier-sip-to-every/ta-p/5547313)** — Architecture and configuration walkthrough for delivering voice encryption from the carrier SIP edge through SBC and CUCM to every phone (TLS, SRTP, certificate management).
 ---
 
 ## What's in here
